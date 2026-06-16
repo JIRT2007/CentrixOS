@@ -1,7 +1,7 @@
 # CentrixOS
 Centrix es una capa de personalización creada para sistemas Debian GNU/Linux mediante repositorios oficiales y Debian/Backports.
 
-# Clonado y asignación de permisos
+## Clonado y asignación de permisos
 ```bash
 git clone URL_REPOSITORY
 
