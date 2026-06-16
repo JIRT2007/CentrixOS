@@ -18,6 +18,8 @@ Este proyecto se encuentra inspirado en **Omarchy** (Created by: *DHH*) y **Loc-
 
 ![Escritorio de CentrixOS](Screenshots/CentrixDesktop-v001.png)
 
+![Escritorio de CentrixOS](Screenshots/CentrixDesktop-2-v001.png)
+
 ### Notas importantes:
 - CentrixOS no es una distribución de GNU/Linux independiente ni basada en alguna ya existente, es unicamente una capa de personalización.
 - Este proyecto aún está en fase de desarrollo por lo que no se recomienda confiar ciegamente en el proceso de instalación, se esta trabajando en las mejoras y correcciones.
