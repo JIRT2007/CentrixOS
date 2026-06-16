@@ -1,0 +1,20 @@
+window {
+    margin: 0px;
+    border: 2px solid grey;
+    /*background-color: #1A1A1A;*/
+    background-color: rgba(26, 26, 26, 0.85);
+    color: white;
+}
+
+#input {
+    /*background-color: #454545;*/
+    background-color: rgba(69, 69, 69, 0.75);
+    color: white; 
+    padding: 2px;
+    border-radius: 0px;
+    border:2px solid grey;
+}
+
+#entry:selected {
+    background-color: #C4C4C4;
+}
