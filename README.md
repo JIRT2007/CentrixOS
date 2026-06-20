@@ -6,7 +6,7 @@ Centrix es una capa de personalización creada para sistemas Debian GNU/Linux me
 git clone https://github.com/JIRT2007/centrixOS.git
 
 chmod +x centrixOS/CUSTOMIZATION/install.sh
-./centrixOS/pre-install.sh
+./centrixOS/install.sh
 ```
 ### KeyBindings basicos: 
 ```bash
