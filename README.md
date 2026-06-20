@@ -3,11 +3,9 @@ Centrix es una capa de personalización creada para sistemas Debian GNU/Linux me
 
 ## Clonado y asignación de permisos
 ```bash
-git clone URL_REPOSITORY
+git clone https://github.com/JIRT2007/centrixOS.git
 
-chmod +x centrixOS/pre-install.sh
 chmod +x centrixOS/CUSTOMIZATION/install.sh
-
 ./centrixOS/pre-install.sh
 ```
 ### KeyBindings basicos: 
@@ -22,18 +20,28 @@ El objetivo es ofrecer una customización con entorno de escritorio Hyprland par
 El script está en una versión de pruebas aun y no ofrece capas de complejidad. Es un script de Shell bastante simple que instala programas desde los repositorios oficiales y de backports de Debian 13, utilizando la personalización desarrollada por JIRT2007.
 Este proyecto se encuentra inspirado en **Omarchy** (Created by: *DHH*) y **Loc-OS** (Created by: *Locos por Linux*). Se agradece a los creadores de los proyectos mencionados y a la comunidad de los sistemas operativos GNU/Linux por la inspiración aportada. 
 
+### Recomendaciones:
+- No ejecute el comando de la forma `sudo ./centrixOS/install.sh`, es preferible asignarle previamente permisos de ejecución.
+- Se recomienda previo a la instalación sobre hardware fisico, realizar una instalación y pruebas sobre una Virtual Machine.
+
 ![Escritorio de CentrixOS](Screenshots/CentrixDesktop-v001.png)
 
 ![Escritorio de CentrixOS](Screenshots/CentrixDesktop-2-v001.png)
 
-### Notas importantes v0.0.2 (Experimental):
+### Notas v0.0.3 (Experimental):
+- Se realizaron mejoras en el script de instalación.
+- Se unificaron los scripts de `pre-install.sh` e `install.sh` en un solo script de instalación.
+- Se modificaron los nombres de los directorios internos.
+- Se esta trabajando en un proceso de actualización para el script.
+
+### Notas v0.0.2 (Experimental):
 - Se agrego Brave Browser como navegador (Necesario para ciertas funciones).
 - Nuevas personalizaciones en Wofi y Waybar.
 - Se agrego calcurse y btop como programas de terminal y Grim para realizar screenshots .
 - Incorporamos nuevos archivos ***.desktop*** dentro del direcotrio de **~/.local/share/applications** para poder ejecutar modelos de IA (ChatGPT, ClaudeCode y Google Gemini) mediante la funcion **--app** que nos ofrecen los navegadores base Chromium.
 - Se recomienda realizar pruebas de CentrixOS en Virtual Machines previo a realizar una instalación sobre hardware fisico.
 
-### Notas importantes v0.0.1 (Experimental):
+### Notas v0.0.1 (Experimental):
 - CentrixOS no es una distribución de GNU/Linux independiente ni basada en alguna ya existente, es unicamente una capa de personalización.
 - Este proyecto aún está en fase de desarrollo por lo que no se recomienda confiar ciegamente en el proceso de instalación, se esta trabajando en las mejoras y correcciones.
 - El objetivo principal del mismo es ser una capa de personalización sobre Debian usando paquetería de repositorios oficiales y de Trixie/Backports.

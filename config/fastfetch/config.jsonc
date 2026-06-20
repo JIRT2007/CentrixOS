@@ -10,7 +10,7 @@
     {
      "type": "custom",
      "key": "Customization",
-     "format": "CentrixOS v0.0.1 [Debian GNU/Linux]"
+     "format": "CentrixOS [Debian GNU/Linux]"
     },
 "separator",
     "kernel", 
