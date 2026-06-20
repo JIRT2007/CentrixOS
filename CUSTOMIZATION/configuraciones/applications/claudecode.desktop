@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ClaudeCode
+Comment=Abrir ClaudeCode en Brave
+Exec=brave-browser --app=https://claude.ai/new
+Terminal=false
+Categories=Network;
