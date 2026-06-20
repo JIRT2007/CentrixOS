@@ -29,7 +29,7 @@ Este proyecto se encuentra inspirado en **Omarchy** (Created by: *DHH*) y **Loc-
 ### Notas importantes v0.0.2 (Experimental):
 - Se agrego Brave Browser como navegador (Necesario para ciertas funciones).
 - Nuevas personalizaciones en Wofi y Waybar.
-- Se agrego calcurse y btop como programas de terminal.
+- Se agrego calcurse y btop como programas de terminal y Grim para realizar screenshots .
 - Incorporamos nuevos archivos ***.desktop*** dentro del direcotrio de **~/.local/share/applications** para poder ejecutar modelos de IA (ChatGPT, ClaudeCode y DuckAI) mediante la funcion **--app** que nos ofrecen los navegadores base Chromium.
 - Se recomienda realizar pruebas de CentrixOS en Virtual Machines previo a realizar una instalación sobre hardware fisico.
 

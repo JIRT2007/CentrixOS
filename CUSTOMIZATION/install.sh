@@ -38,7 +38,7 @@ EOF
     			sudo apt install -t trixie-backports xdg-desktop-portal-hyprland
 			#sudo apt install -t trixie-backports waybar
 
-			sudo apt install kitty fastfetch waybar swaybg wofi zsh alsa-utils ranger wlogout curl wget starship calcurse btop
+			sudo apt install kitty fastfetch waybar swaybg wofi zsh alsa-utils ranger wlogout curl wget starship calcurse btop grim
 
 			REAL_USER=${SUDO_USER:-$USER}
 			sudo chsh -s /usr/bin/zsh "$REAL_USER"
