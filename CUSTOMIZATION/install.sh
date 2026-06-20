@@ -8,7 +8,7 @@ cat << "EOF"
 *-----------------------------------------------------*
 | ¿Usted tiene instalado los DebianTrixie/Backports?  |
 *-----------------------------------------------------*
-| 1) Si, estan instalados (Seguir con la instalaciòn).|
+| 1) Si, estan instalados (Seguir con la instalación).|
 | 0) No estan instalados.                             |
 *-----------------------------------------------------*
 
@@ -18,11 +18,11 @@ cat << "EOF"
 *----------------------------------------------*
 
 *-----------------------------------------------------------*
-| Previo a instalar la capa de personalizaciòn,             |
+| Previo a instalar la capa de personalización,             |
 | asegurese de tener instalados los DebianTrixie/Backports. |
 |                                                           |
 | En caso de no tenerlos instalados, siga los pasos         | 
-| de la documentaciòn.                                      |
+| de la documentación.                                      |
 *-----------------------------------------------------------*
 | https://backports.debian.org/uploads/trixie-backports/    |
 *-----------------------------------------------------------*
@@ -36,9 +36,9 @@ EOF
 
 			sudo apt install -t trixie-backports hyprland
     			sudo apt install -t trixie-backports xdg-desktop-portal-hyprland
-			sudo apt install -t trixie-backports waybar
+			#sudo apt install -t trixie-backports waybar
 
-			sudo apt install kitty waybar swaybg wofi zsh alsa-utils ranger wlogout curl wget starship
+			sudo apt install kitty fastfetch waybar swaybg wofi zsh alsa-utils ranger wlogout curl wget starship calcurse btop
 
 			REAL_USER=${SUDO_USER:-$USER}
 			sudo chsh -s /usr/bin/zsh "$REAL_USER"
@@ -51,7 +51,9 @@ EOF
 			cp ~/centrixOS/CUSTOMIZATION/configuraciones/starship.toml ~/.config/
 			cp -rf ~/centrixOS/CUSTOMIZATION/configuraciones/wlogout ~/.config/
 			cp -rf ~/centrixOS/CUSTOMIZATION/configuraciones/applications ~/.local/share
-		
+			cp -rf ~/centrixOS/CUSTOMIZATION/configuraciones/fastfetch ~/.config
+
+			curl -fsS https://dl.brave.com/install.sh | sh
 		  exit 0
 		;;
 

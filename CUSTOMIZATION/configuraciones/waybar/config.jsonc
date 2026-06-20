@@ -14,7 +14,8 @@
     ],
 
     "modules-center": [        
-    	"hyprland/window"
+    	//"hyprland/window"
+    	"clock"
     ],
 
     "modules-right": [
@@ -22,7 +23,6 @@
         "pulseaudio",
         "battery",
         "battery#bat2",
-        "clock",
         "tray", //Bandeja del sistema (Discord, Steam, etc)
         "custom/power"
     ],
@@ -32,8 +32,8 @@
     },
 
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d/%m/%Y}"
+        "format": "{:%H:%M | %d/%m/%Y}",
+	"on-click": "kitty -e calcurse"
     },
     
     "battery": {

@@ -14,7 +14,7 @@ cat << "EOF"
 / /__/ -_) _ \/ __/ __/ /\ \ / /_/ /\ \  
 \___/\__/_//_/\__/_/ /_//_\_\\____/___/ v0.0.1 
                                          
-Gracias por confiar en la capa de personalizaciòn de CentrixOS para los sistemas
+Gracias por confiar en la capa de personalización de CentrixOS para los sistemas
 basados en Debian GNU/Linux.
 Este proyecto esta inspirado por Omarchy (Created by: DHH) y Loc-OS (Created by: Locos por Linux).
 
@@ -22,16 +22,16 @@ EOF
 
 cat << "EOF"
 *--------------------------------------*
-| 1) Instalar capa de personalizaciòn. |
+| 1) Instalar capa de personalización. |
 | 0) Salir.                            |
 *--------------------------------------*
-| Codigo creado por JIRT               |
+| Codigo creado por JIRT2007           |
 *--------------------------------------*
 
 *-------------------------------------------------------------------------------*
 | No se recomienda ejecutar este script como root o usando sudo,                |
 | si usted lo ejecuto de la forma "sudo ./script.sh" le solicitamos             |
-| que por favor cancele la ejecuciòn, le asigne permisos y lo ejecute           |
+| que por favor cancele la ejecución, le asigne permisos y lo ejecute           |
 | como su usario personal.                                                      |
 | Esto sera corregido para futuras versiones del script, lamento las molestias. |
 *-------------------------------------------------------------------------------*

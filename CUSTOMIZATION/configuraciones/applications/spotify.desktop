@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Spotify
+Exec=spotify
+Type=Application
+Categories=AudioVideo;Player;

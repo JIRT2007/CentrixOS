@@ -4,6 +4,6 @@ show=drun
 prompt=Buscar...
 insensitive=true
 
-#allow_images=true
+allow_images=true
 
 hide_scroll=true
