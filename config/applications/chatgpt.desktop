@@ -3,6 +3,6 @@ Version=1.0
 Type=Application
 Name=ChatGPT
 Comment=Abrir ChatGPT en Brave
-Exec=brave-browser --app=https://chatgpt.com
+Exec=chromium --app=https://chatgpt.com
 Terminal=false
-Categories=Network;
+Categories=AI;

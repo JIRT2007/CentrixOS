@@ -15,6 +15,23 @@ bind = , F2, killactive,
 bind = , F3, exec, wofi -a --show drun
 ```
 
+### Instalar Trixie/Backports:
+https://backports.debian.org/Instructions/
+
+`sudo vim /etc/apt/sources.list.d/debian-backports.sources`
+
+Contenido: 
+
+```bash
+Types: deb deb-src
+URIs: http://deb.debian.org/debian
+Suites: trixie-backports
+Components: main
+Enabled: yes
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+```
+`sudo apt-get update && sudo apt upgrade`
+
 ## Sobre el proyecto:
 El objetivo es ofrecer una customización con entorno de escritorio Hyprland para sistemas Debian 13 "Trixie" y utilidades del sistema.
 El script está en una versión de pruebas aun y no ofrece capas de complejidad. Es un script de Shell bastante simple que instala programas desde los repositorios oficiales y de backports de Debian 13, utilizando la personalización desarrollada por JIRT2007.
@@ -23,10 +40,20 @@ Este proyecto se encuentra inspirado en **Omarchy** (Created by: *DHH*) y **Loc-
 ### Recomendaciones:
 - No ejecute el comando de la forma `sudo ./centrixOS/install.sh`, es preferible asignarle previamente permisos de ejecución.
 - Se recomienda previo a la instalación sobre hardware fisico, realizar una instalación y pruebas sobre una Virtual Machine.
+- Luego de instalada la capa de personalización se recomienda reiniciar el equipo.
+- Se recomienda realizar la instalacion de CentrixOS sobre un sistema Debian GNU/Linux recien instalado.
 
 ![Escritorio de CentrixOS](Screenshots/CentrixDesktop-v001.png)
 
 ![Escritorio de CentrixOS](Screenshots/CentrixDesktop-2-v001.png)
+
+### Notas v0.0.4 "Aries" (Experimental):
+- Se agrego Chromium como navegador web remplazando a Brave Browser.
+- Nuevas modificaciones para el script de instalación.
+- Se implementaron nombres clave para las versiones de CentrixOS a partir de la v0.0.4 inspirados en los signos zodiacales.
+- Se implemento una configuración de Fastfetch personalizado y el comando `VERSION` para visualizar la version que se utiliza de CentrixOS.
+- Se modifico la función `--app` para los agentes de inteligencia artificial para que los mismos funcionen con Chromium Browser.
+- Se habilito por defecto la opcion `resize_on_border` para poder redimensionar las ventanas cuando se encuentran en modo floating.
 
 ### Notas v0.0.3 (Experimental):
 - Se realizaron mejoras en el script de instalación.

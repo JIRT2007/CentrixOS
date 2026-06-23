@@ -17,3 +17,17 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 eval "$(starship init zsh)"
+
+RED='\e[1;31m'
+NC='\e[0m'
+
+VERSION() {
+echo -e "
+${RED}CentrixOS v0.0.4 "Aries"${NC}
+----------------------
+${RED}Developer  :${NC} JIRT2007
+${RED}Repository :${NC} https://github.com/JIRT2007/centrixOS.git
+${RED}WM         :${NC} Hyprland
+"
+} 
+
