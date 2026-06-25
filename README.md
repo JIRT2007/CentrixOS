@@ -44,6 +44,7 @@ Este proyecto se encuentra inspirado en **Omarchy** (Created by: *DHH*) y **Loc-
 - Se recomienda realizar la instalacion de CentrixOS sobre un sistema Debian GNU/Linux recien instalado.
 
 ![Escritorio de CentrixOS](Screenshots/PurpleSwirl.jpeg)
+
 ![Escritorio de CentrixOS](Screenshots/GreenForest.png)
 
 <!--
