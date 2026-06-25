@@ -11,10 +11,11 @@ cat << "EOF"
 /___/_//_/___/\__/\_,_/_/_/  
                          
 *-----------------------------------------------------*
-| ¿Usted tiene instalado los DebianTrixie/Backports?  |
+| ¿Desea instalar la capa de personalización?         |
 *-----------------------------------------------------*
-| 1) Si, estan instalados (Seguir con la instalación).|
-| 0) No estan instalados.                             |
+| 1) Instalar CentrixOS Purple-Swirl.                 |
+| 2) Instalar CentrixOS Green-Forest.                 | 
+| 0) Exit.                                            |
 *-----------------------------------------------------*
 
 *----------------------------------------------*
@@ -41,23 +42,49 @@ EOF
 
 			sudo apt install -y -t trixie-backports hyprland
     			sudo apt install -y -t trixie-backports xdg-desktop-portal-hyprland
-			#sudo apt install -t trixie-backports waybar
+			sudo apt install -y -t trixie-backports waybar
 
-			sudo apt install -y kitty fastfetch waybar swaybg wofi zsh alsa-utils ranger wlogout curl wget starship calcurse btop grim chromium
+			sudo apt install -y kitty fastfetch swaybg wofi zsh alsa-utils ranger wlogout curl wget starship btop grim chromium fonts-jetbrains-mono
 
 			REAL_USER=${SUDO_USER:-$USER}
 			sudo chsh -s /usr/bin/zsh "$REAL_USER"
 
-			cp ~/centrixOS/config/.zshrc ~/.zshrc
-		 	cp -rf ~/centrixOS/config/hypr ~/.config/
-			cp -rf ~/centrixOS/config/kitty ~/.config/
-			cp -rf ~/centrixOS/config/waybar ~/.config/
-			cp -rf ~/centrixOS/config/wofi ~/.config/
-			cp ~/centrixOS/config/starship.toml ~/.config/
-			cp -rf ~/centrixOS/config/wlogout ~/.config/
-			cp -rf ~/centrixOS/config/applications ~/.local/share
-			cp -rf ~/centrixOS/config/fastfetch ~/.config
+			cp ~/centrixOS/Purple-Swirl/config/.zshrc ~/.zshrc
+		 	cp -rf ~/centrixOS/Purple-Swirl/config/hypr ~/.config/
+			cp -rf ~/centrixOS/Purple-Swirl/config/kitty ~/.config/
+			cp -rf ~/centrixOS/Purple-Swirl/config/waybar ~/.config/
+			cp -rf ~/centrixOS/Purple-Swirl/config/wofi ~/.config/
+			cp ~/centrixOS/Purple-Swirl/config/starship.toml ~/.config/
+			cp -rf ~/centrixOS/Purple-Swirl/config/wlogout ~/.config/
+			cp -rf ~/centrixOS/Purple-Swirl/config/applications ~/.local/share
+			cp -rf ~/centrixOS/Purple-Swirl/config/fastfetch ~/.config
 		 exit 0
+		;;
+
+		2)
+		 	mkdir -p ~/.config
+			mkdir -p ~/.local/share
+
+			sudo apt install -y -t trixie-backports hyprland
+    			sudo apt install -y -t trixie-backports xdg-desktop-portal-hyprland
+			sudo apt install -y -t trixie-backports waybar
+
+			sudo apt install -y kitty fastfetch swaybg wofi zsh alsa-utils ranger wlogout curl wget starship btop grim chromium fonts-jetbrains-mono
+
+			REAL_USER=${SUDO_USER:-$USER}
+			sudo chsh -s /usr/bin/zsh "$REAL_USER"
+		
+			cp ~/centrixOS/Green-Forest/config/.zshrc ~/.zshrc
+			cp -rf ~/centrixOS/Green-Forest/config/hypr ~/.config/
+			cp -rf ~/centrixOS/Green-Forest/config/kitty ~/.config/
+			cp -rf ~/centrixOS/Green-Forest/config/waybar ~/.config/
+			cp -rf ~/centrixOS/Green-Forest/config/wofi ~/.config/
+			cp ~/centrixOS/Green-Forest/config/starship.toml ~/.config/
+			cp -rf ~/centrixOS/Green-Forest/config/wlogout ~/.config/
+			cp -rf ~/centrixOS/Green-Forest/config/applications ~/.local/share
+			cp -rf ~/centrixOS/Green-Forest/config/fastfetch ~/.config
+		exit 0
+
 		;;
 
 		0)
@@ -86,22 +113,17 @@ cat << "EOF"
 
 *--------------------------------------*
 | 1) Instalar capa de personalización. |
-| 2) Actualizar a la siguiente versión.|
 | 0) Exit.                             |
 *--------------------------------------*
 | Code developed by JIRT2007           |
 *--------------------------------------*
 
 EOF
-	read -p "Ingresar su opciòn: " opcionMENU
+	read -p "Ingresar su opción: " opcionMENU
 	case $opcionMENU in
 
 		1) 
 		  install
-		;;
-
-		2)
-		  update
 		;;
 
 		0)

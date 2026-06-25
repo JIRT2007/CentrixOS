@@ -43,9 +43,20 @@ Este proyecto se encuentra inspirado en **Omarchy** (Created by: *DHH*) y **Loc-
 - Luego de instalada la capa de personalización se recomienda reiniciar el equipo.
 - Se recomienda realizar la instalacion de CentrixOS sobre un sistema Debian GNU/Linux recien instalado.
 
-![Escritorio de CentrixOS](Screenshots/CentrixDesktop-v001.png)
+![Escritorio de CentrixOS](Screenshots/PurpleSwirl.jpeg)
+![Escritorio de CentrixOS](Screenshots/GreenForest.png)
 
-![Escritorio de CentrixOS](Screenshots/CentrixDesktop-2-v001.png)
+<!--
+Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario, Piscis.
+-->
+
+### Notas v0.0.5 "Tauro" (Inestable):
+- CentrixOS Tauro representa la primer version con nomenclatura "Inestable" y representa una nueva etapa para el desarrollo del proyecto de CentrixOS. Esta versión se diseña para renovar la experiencia visual del proyecto y agregar nuevas funcionalidades que las versiones experimentales no incorporaban. 
+- Nueva función del script de instalacion de CentrixOS para poder elegir entre dos variantes de personalización para Hyprland (Purple-Swirl y Green-Forest).
+- Se removio la utilidad de Calcurse para tener un calendario via terminal.
+- ASCII art personalizado para fastfetch.
+- Se esta trabajando en una opción para poder alternar entre los entornos de escritorio.
+
 
 ### Notas v0.0.4 "Aries" (Experimental):
 - Se agrego Chromium como navegador web remplazando a Brave Browser.

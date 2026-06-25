@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=ChatGPT
-Comment=Abrir ChatGPT en Brave
-Exec=chromium --app=https://chatgpt.com
-Terminal=false
-Categories=AI;

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Google Gemini
-Comment=Abrir Google Gemini en Brave
-Exec=chromium --app=https://gemini.google.com/app
-Terminal=false
-Categories=AI;

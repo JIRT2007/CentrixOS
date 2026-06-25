@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=ClaudeCode
+Exec=chromium --app=https://claude.ai/new
+Terminal=false
+Categories=AI;
