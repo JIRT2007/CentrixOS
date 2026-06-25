@@ -64,7 +64,7 @@ Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Caprico
 - Se implementaron nombres clave para las versiones de CentrixOS a partir de la v0.0.4 inspirados en los signos zodiacales.
 - Se implemento una configuración de Fastfetch personalizado y el comando `VERSION` para visualizar la version que se utiliza de CentrixOS.
 - Se modifico la función `--app` para los agentes de inteligencia artificial para que los mismos funcionen con Chromium Browser.
-- Se habilito por defecto la opcion `resize_on_border` para poder redimensionar las ventanas cuando se encuentran en modo floating.
+- Se habilito por defecto la opción `resize_on_border` para poder redimensionar las ventanas cuando se encuentran en modo floating.
 
 ### Notas v0.0.3 (Experimental):
 - Se realizaron mejoras en el script de instalación.
