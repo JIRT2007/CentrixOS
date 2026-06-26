@@ -1,5 +1,82 @@
 #!/bin/bash
 
+change() {
+	while true; do
+		clear
+
+cat << "EOF"
+  _______                        ________                
+ / ___/ /  ___ ____  ___ ____   /_  __/ /  ___ __ _  ___ 
+/ /__/ _ \/ _ `/ _ \/ _ `/ -_)   / / / _ \/ -_)  ' \/ -_)
+\___/_//_/\_,_/_//_/\_, /\__/   /_/ /_//_/\__/_/_/_/\__/ 
+                   /___/                                 
+
+*----------------------------------------*
+| ¿Que tema desea utilizar en CentrixOS? |
+*----------------------------------------*
+| 1) Purple-Swirl.                       |
+| 2) Green-Forest.                       |
+| 3) Shadow-Dance.                       |
+| 0) Exit.                               |
+*----------------------------------------*
+
+*----------------------------------------*
+| Al momento de seleccionar un nuevo     |
+| tema de CentrixOS se eliminaran TODAS  |
+| las modificaciones esteticas que haya  |
+| realizado.                             |
+| Se recomienda hacer un backup.         |
+*----------------------------------------*
+EOF
+	read -p "Ingrese su opción: " opcionCHANGE
+	case $opcionCHANGE in
+
+		1)
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/hypr ~/.config/
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/kitty ~/.config/
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/waybar ~/.config/
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/wofi ~/.config/
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/wlogout ~/.config/
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/applications ~/.local/share
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/fastfetch ~/.config
+
+			cp ~/centrixOS/themes/Purple-Swirl/config/starship.toml ~/.config/
+			cp ~/centrixOS/themes/Purple-Swirl/config/.zshrc ~/.zshrc
+		;;
+
+		2)
+			cp -rf ~/centrixOS/themes/Green-Forest/config/hypr ~/.config/
+			cp -rf ~/centrixOS/themes/Green-Forest/config/kitty ~/.config/
+			cp -rf ~/centrixOS/themes/Green-Forest/config/waybar ~/.config/
+			cp -rf ~/centrixOS/themes/Green-Forest/config/wofi ~/.config/
+			cp -rf ~/centrixOS/themes/Green-Forest/config/wlogout ~/.config/
+			cp -rf ~/centrixOS/themes/Green-Forest/config/applications ~/.local/share
+			cp -rf ~/centrixOS/themes/Green-Forest/config/fastfetch ~/.config
+
+			cp ~/centrixOS/themes/Green-Forest/config/starship.toml ~/.config/
+			cp ~/centrixOS/themes/Green-Forest/config/.zshrc ~/.zshrc
+
+		exit 0
+		;;
+
+		3)
+
+		;;
+
+		0)
+		 clear
+		  exit 0
+		;;
+
+		*)
+		  echo "Orden no encontrada."
+		  sleep 1
+		;;
+
+esac
+done
+}
+
 install() {
 	while true; do
 		clear
@@ -13,25 +90,22 @@ cat << "EOF"
 *-----------------------------------------------------*
 | ¿Desea instalar la capa de personalización?         |
 *-----------------------------------------------------*
-| 1) Instalar CentrixOS Purple-Swirl.                 |
-| 2) Instalar CentrixOS Green-Forest.                 | 
+| 1) Instalar CentrixOS base (Purple-Swirl).          |
 | 0) Exit.                                            |
 *-----------------------------------------------------*
 
-*----------------------------------------------*
-| Al terminar la personalizaciòn se recomienda |
-| reiniciar el sistema.                        |
-*----------------------------------------------*
+*-----------------------------------------------------*
+| Al terminar la personalizaciòn se recomienda        |
+|reiniciar el sistema.                                |
+*-----------------------------------------------------*
 
-*-----------------------------------------------------------*
-| Previo a instalar la capa de personalización,             |
-| asegurese de tener instalados los DebianTrixie/Backports. |
-|                                                           |
-| En caso de no tenerlos instalados, siga los pasos         | 
-| de la documentación.                                      |
-*-----------------------------------------------------------*
-| https://backports.debian.org/uploads/trixie-backports/    |
-*-----------------------------------------------------------*
+*-----------------------------------------------------*
+| Previo a instalar la capa de personalización,       |
+| asegurese de tener instalados los Trixie/Backports. |
+|                                                     |
+| En caso de no tenerlos instalados, siga los pasos   | 
+| de la documentación oficial.                        |
+*-----------------------------------------------------*
 EOF
 	read -p "Ingrese su opción: " opcionINSTALL
 	case $opcionINSTALL in
@@ -41,7 +115,7 @@ EOF
 			mkdir -p ~/.local/share
 
 			sudo apt install -y -t trixie-backports hyprland
-    			sudo apt install -y -t trixie-backports xdg-desktop-portal-hyprland
+    		sudo apt install -y -t trixie-backports xdg-desktop-portal-hyprland
 			sudo apt install -y -t trixie-backports waybar
 
 			sudo apt install -y kitty fastfetch swaybg wofi zsh alsa-utils ranger wlogout curl wget starship btop grim chromium fonts-jetbrains-mono
@@ -49,46 +123,23 @@ EOF
 			REAL_USER=${SUDO_USER:-$USER}
 			sudo chsh -s /usr/bin/zsh "$REAL_USER"
 
-			cp ~/centrixOS/Purple-Swirl/config/.zshrc ~/.zshrc
-		 	cp -rf ~/centrixOS/Purple-Swirl/config/hypr ~/.config/
-			cp -rf ~/centrixOS/Purple-Swirl/config/kitty ~/.config/
-			cp -rf ~/centrixOS/Purple-Swirl/config/waybar ~/.config/
-			cp -rf ~/centrixOS/Purple-Swirl/config/wofi ~/.config/
-			cp ~/centrixOS/Purple-Swirl/config/starship.toml ~/.config/
-			cp -rf ~/centrixOS/Purple-Swirl/config/wlogout ~/.config/
-			cp -rf ~/centrixOS/Purple-Swirl/config/applications ~/.local/share
-			cp -rf ~/centrixOS/Purple-Swirl/config/fastfetch ~/.config
+			
+		 	cp -rf ~/centrixOS/themes/Purple-Swirl/config/hypr ~/.config/
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/kitty ~/.config/
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/waybar ~/.config/
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/wofi ~/.config/
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/wlogout ~/.config/
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/applications ~/.local/share
+			cp -rf ~/centrixOS/themes/Purple-Swirl/config/fastfetch ~/.config
+
+			cp ~/centrixOS/themes/Purple-Swirl/config/starship.toml ~/.config/
+			cp ~/centrixOS/themes/Purple-Swirl/config/.zshrc ~/.zshrc
 		 exit 0
 		;;
 
-		2)
-		 	mkdir -p ~/.config
-			mkdir -p ~/.local/share
-
-			sudo apt install -y -t trixie-backports hyprland
-    			sudo apt install -y -t trixie-backports xdg-desktop-portal-hyprland
-			sudo apt install -y -t trixie-backports waybar
-
-			sudo apt install -y kitty fastfetch swaybg wofi zsh alsa-utils ranger wlogout curl wget starship btop grim chromium fonts-jetbrains-mono
-
-			REAL_USER=${SUDO_USER:-$USER}
-			sudo chsh -s /usr/bin/zsh "$REAL_USER"
-		
-			cp ~/centrixOS/Green-Forest/config/.zshrc ~/.zshrc
-			cp -rf ~/centrixOS/Green-Forest/config/hypr ~/.config/
-			cp -rf ~/centrixOS/Green-Forest/config/kitty ~/.config/
-			cp -rf ~/centrixOS/Green-Forest/config/waybar ~/.config/
-			cp -rf ~/centrixOS/Green-Forest/config/wofi ~/.config/
-			cp ~/centrixOS/Green-Forest/config/starship.toml ~/.config/
-			cp -rf ~/centrixOS/Green-Forest/config/wlogout ~/.config/
-			cp -rf ~/centrixOS/Green-Forest/config/applications ~/.local/share
-			cp -rf ~/centrixOS/Green-Forest/config/fastfetch ~/.config
-		exit 0
-
-		;;
-
 		0)
-		 exit 0 
+		 clear
+		  exit 0 
 		;;
 
 		*)
@@ -98,7 +149,6 @@ EOF
 
 esac
 done
-
 }
 
 
@@ -106,18 +156,30 @@ while true; do
 	clear
 
 cat << "EOF"
-  _____         __      _      ____  ____
- / ___/__ ___  / /_____(_)_ __/ __ \/ __/
-/ /__/ -_) _ \/ __/ __/ /\ \ / /_/ /\ \  
-\___/\__/_//_/\__/_/ /_//_\_\\____/___/  
+ 
+ ██████████████████████████████████
+ ██                              ██
+ ██  ██████████████████████████
+ ██  ██                      ██
+ ██  ██  ██████████████████  ██
+ ██  ██  ██              ██  ██
+ ██  ██  ██  ██████████████  ██
+ ██  ██  ██              ██  ██
+ ██  ██  ██████████████  ██  ██
+ ██  ██  ██              ██  ██
+ ██  ██  ██████████████████  ██
+ ██  ██                      ██
+ ██  ██████████████████████████
+ ██                              ██
+ ██████████████████████████████████
 
 *--------------------------------------*
 | 1) Instalar capa de personalización. |
+| 2) Cambiar tema de CentrixOS.        |
 | 0) Exit.                             |
 *--------------------------------------*
 | Code developed by JIRT2007           |
 *--------------------------------------*
-
 EOF
 	read -p "Ingresar su opción: " opcionMENU
 	case $opcionMENU in
@@ -126,7 +188,12 @@ EOF
 		  install
 		;;
 
+		2)
+		  change
+		;;
+
 		0)
+		 clear
 		  exit 0
 		;;
 
