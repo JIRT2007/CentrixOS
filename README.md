@@ -64,4 +64,3 @@ Este proyecto se encuentra inspirado en **Omarchy** (Created by: *DHH*) y **Loc-
 - Luego de instalada la capa de personalización se recomienda reiniciar el equipo.
 - Se recomienda realizar la instalacion de CentrixOS sobre un sistema Debian GNU/Linux recien instalado.
 
-Muchas gracias por confiar en la capa de personalización de CentrixOS para sistemas Debian GNU/Linux.
