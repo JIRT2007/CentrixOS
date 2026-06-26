@@ -9,7 +9,6 @@ Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Caprico
 - Nueva función del script de instalacion de CentrixOS para poder elegir entre dos variantes de personalización para Hyprland (Purple-Swirl y Green-Forest).
 - Se removio la utilidad de Calcurse para tener un calendario via terminal.
 - ASCII art personalizado para fastfetch.
-- Se esta trabajando en una opción para poder alternar entre los entornos de escritorio.
 - Planeamos implementar en el menu de instalación de CentrixOS la opción de instalar el sistema con OpenBox como entorno de escritorio junto a Hyprland. Se esta analizando remplazar Hyprland en futuras versiones para tener OpenBox como entorno de escritorio principal.
 
 ### Notas v0.0.4 "Aries" (Experimental):

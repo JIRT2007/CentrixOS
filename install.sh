@@ -16,7 +16,6 @@ cat << "EOF"
 *----------------------------------------*
 | 1) Purple-Swirl.                       |
 | 2) Green-Forest.                       |
-| 3) Shadow-Dance.                       |
 | 0) Exit.                               |
 *----------------------------------------*
 
@@ -57,10 +56,6 @@ EOF
 			cp ~/centrixOS/themes/Green-Forest/config/.zshrc ~/.zshrc
 
 		exit 0
-		;;
-
-		3)
-
 		;;
 
 		0)
