@@ -25,7 +25,9 @@ cat << "EOF"
 | tema de CentrixOS se eliminaran TODAS  |
 | las modificaciones esteticas que haya  |
 | realizado.                             |
-| Se recomienda hacer un backup.         |
+| Se recomienda hacer un backup y        |
+| reiniciar luego de aplicado los        |
+| cambios.                               |
 *----------------------------------------*
 EOF
 	read -p "Ingrese su opción: " opcionCHANGE
