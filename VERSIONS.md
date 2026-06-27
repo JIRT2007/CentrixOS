@@ -2,18 +2,18 @@
 <!--
 Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario, Piscis.
 -->
-### Notas v0.0.6 "Aries" (Inestable): 
+### Notas v0.0.6 serie "Aries" (Inestable): 
 - Se reconsidero la opción de utilizar Openbox como entorno de remplazo en Hyprland y se opto por ofrecer Sway como entorno de escritorio secundario a elección del usuariio, el mismo esta en desarrollo.
 - Se agrego para Hyprland un nuevo tema de personalización llamado "Shadow-Dance" con colores mayormente monocromaticos destacando el blanco.
 
-### Notas v0.0.5 "Aries" (Inestable):
+### Notas v0.0.5 serie "Aries" (Inestable):
 - CentrixOS Tauro representa la primer version con nomenclatura "Inestable" y representa una nueva etapa para el desarrollo del proyecto de CentrixOS. Esta versión se diseña para renovar la experiencia visual del proyecto y agregar nuevas funcionalidades que las versiones experimentales no incorporaban. 
 - Nueva función del script de instalacion de CentrixOS para poder elegir entre dos variantes de personalización para Hyprland (Purple-Swirl y Green-Forest).
 - Se removio la utilidad de Calcurse para tener un calendario via terminal.
 - ASCII art personalizado para fastfetch.
 - Planeamos implementar en el menu de instalación de CentrixOS la opción de instalar el sistema con OpenBox como entorno de escritorio junto a Hyprland. Se esta analizando remplazar Hyprland en futuras versiones para tener OpenBox como entorno de escritorio principal.
 
-### Notas v0.0.4 "Aries" (Experimental):
+### Notas v0.0.4 serie "Aries" (Experimental):
 - Se agrego Chromium como navegador web remplazando a Brave Browser.
 - Nuevas modificaciones para el script de instalación.
 - Se implementaron nombres clave para las versiones de CentrixOS a partir de la v0.0.4 inspirados en los signos zodiacales.
