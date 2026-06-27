@@ -1,0 +1,131 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color:#0A0A0A;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button {
+    background: transparent;
+    color: #8A8A8A;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    /*padding: 0 6px;*/
+    margin:0 2px;
+    border-radius: 0;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    box-shadow: none;
+    color: #C9C9C9;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    font-weight: bold;
+    background: transparent;
+}
+
+
+#battery{
+	background:transparent;
+    	border-radius: 4px;
+    	margin: 1px;
+    	padding:0px 6px;
+    	color: #ffffff;
+}
+
+#pulseaudio{
+	background:transparent;
+    	border-radius: 4px;
+    	margin: 1px;
+    	padding:0px 6px;
+    	color: #ffffff;
+}
+
+#tray{
+	background:transparent;
+    	border-radius: 4px;
+    	margin: 1px;
+    	padding:0px 6px;
+    	color: #ffffff;
+}
+
+#custom-power{
+	background:transparent;
+    	border-radius: 4px;
+    	margin: 1px;
+    	padding:0px 6px;
+    	color: #E282FF;
+}
+
+#window{
+    	background:transparent;
+    	border-radius: 4px;
+    	margin: 1px;
+    	padding:0px 6px;
+    	color: #ffffff;
+}
+
+#workspaces {
+    	background:transparent;
+    	border-radius: 4px;
+    	margin: 1px;
+    	padding:0px 6px;
+    	color: #ffffff;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock{
+    	background:transparent;
+    	border-radius:4px;
+    	margin: 1px;
+    	padding:0px 6px;
+    	color: #ffffff;
+	margin-right:3px;
+}
+
+#network{
+	background:transparent;
+    	border-radius:4px;
+    	margin: 1px;
+    	padding:0px 6px;
+    	color: #ffffff;
+	margin-right:3px;
+}
+#network.disconnected {
+    background-color: #f53c3c;
+}

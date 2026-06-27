@@ -16,6 +16,7 @@ cat << "EOF"
 *----------------------------------------*
 | 1) Purple-Swirl.                       |
 | 2) Green-Forest.                       |
+| 3) Shadow-Dance.                       |
 | 0) Exit.                               |
 *----------------------------------------*
 
@@ -56,6 +57,19 @@ EOF
 			cp ~/centrixOS/themes/Green-Forest/config/.zshrc ~/.zshrc
 
 		exit 0
+		;;
+
+		3)
+			cp -rf ~/centrixOS/themes/Shadow-Dance/config/hypr ~/.config/
+			cp -rf ~/centrixOS/themes/Shadow-Dance/config/kitty ~/.config/
+			cp -rf ~/centrixOS/themes/Shadow-Dance/config/waybar ~/.config/
+			cp -rf ~/centrixOS/themes/Shadow-Dance/config/wofi ~/.config/
+			cp -rf ~/centrixOS/themes/Shadow-Dance/config/wlogout ~/.config/
+			cp -rf ~/centrixOS/themes/Shadow-Dance/config/applications ~/.local/share
+			cp -rf ~/centrixOS/themes/Shadow-Dance/config/fastfetch ~/.config
+
+			cp ~/centrixOS/themes/Shadow-Dance/config/starship.toml ~/.config/
+			cp ~/centrixOS/themes/Shadow-Dance/config/.zshrc ~/.zshrc
 		;;
 
 		0)

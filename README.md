@@ -41,13 +41,15 @@ Este proyecto se encuentra inspirado en **Omarchy** (Created by: *DHH*) y **Loc-
 
 ![Escritorio de CentrixOS](Screenshots/GreenForest.png)
 
+![Escriotrio de CentrixOS](Screenshots/ShadowDance.png)
+
 ## Principios filosoficos:
 
 ### 1) Simplicidad:
 - La instalación de CentrixOS se diseña para ser lo mas simple posible, cada función dentro del script se diseña para ser los mas minimalista posible favoreciendo la modificación y la auditabilidad.
 
 ### 2) Personalización:
-- CentrixOS ofrece una base de customización sobre Debian GNU/Linux usando Hyprland y Openbox como entornos de escritorio, los usuarios pueden modificar a su gusto la personalización que se ofrece nativamente.
+- CentrixOS ofrece una base de customización sobre Debian GNU/Linux usando Hyprland como entornos de escritorio, los usuarios pueden modificar a su gusto la personalización que se ofrece nativamente.
 
 ### 3) Minimalismo:
 - CentrixOS instala unicamente los necesario para ofrecer una experiencia de escritorio moderna. El software adicional e innecesario para la customización basica queda a elección del usuario.
