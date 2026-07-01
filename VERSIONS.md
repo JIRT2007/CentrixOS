@@ -1,19 +1,27 @@
 # Registro de cambios:
-<!--
-Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario, Piscis.
--->
-### Notas v0.0.6 serie "Aries" (Inestable): 
-- Se reconsidero la opción de utilizar Openbox como entorno de remplazo en Hyprland y se opto por ofrecer Sway como entorno de escritorio secundario a elección del usuariio, el mismo esta en desarrollo.
+
+### Notas v0.0.7 (Inestable):
+- Se cancelo la opción para tener Sway como entorno de escritorio alternativo a Hyprland y se deja este ultimo como unica opción.
+- Oficialmente el proyecto de CentrixOS tiene su propia web mediante GitHub Pages. https://jirt2007.github.io/webCENTRIX/
+- Se agrego una función para cambiar el tema de CentrixOS entre las configuraciones que se ofrecen, los mismos temas se actualizan automaticamente.
+- Se modifico el wallpaper del tema "Purple-Swirl".
+- Nuevo tema para CentrixOS llamado "Blue-Depression".
+- Se retira la nomenclatura de versiones inspirado en los signos zodiacales.
+- El script de instalación de CentrixOS se tradujo al ingles.
+- Se incorporo una nueva opción en el script para habilitar los Debian Trixie/Backports.
+
+### Notas v0.0.6 (Inestable): 
+- Se reconsidero la opción de utilizar Openbox como entorno de remplazo en Hyprland y se opto por ofrecer Sway como entorno de escritorio secundario a elección del usuario, el mismo esta en desarrollo.
 - Se agrego para Hyprland un nuevo tema de personalización llamado "Shadow-Dance" con colores mayormente monocromaticos destacando el blanco.
 
-### Notas v0.0.5 serie "Aries" (Inestable):
-- CentrixOS Tauro representa la primer version con nomenclatura "Inestable" y representa una nueva etapa para el desarrollo del proyecto de CentrixOS. Esta versión se diseña para renovar la experiencia visual del proyecto y agregar nuevas funcionalidades que las versiones experimentales no incorporaban. 
+### Notas v0.0.5 (Inestable):
+- CentrixOS v0.0.5 representa la primer version con nomenclatura "Inestable" y representa una nueva etapa para el desarrollo del proyecto de CentrixOS. Esta versión se diseña para renovar la experiencia visual del proyecto y agregar nuevas funcionalidades que las versiones experimentales no incorporaban. 
 - Nueva función del script de instalacion de CentrixOS para poder elegir entre dos variantes de personalización para Hyprland (Purple-Swirl y Green-Forest).
 - Se removio la utilidad de Calcurse para tener un calendario via terminal.
 - ASCII art personalizado para fastfetch.
 - Planeamos implementar en el menu de instalación de CentrixOS la opción de instalar el sistema con OpenBox como entorno de escritorio junto a Hyprland. Se esta analizando remplazar Hyprland en futuras versiones para tener OpenBox como entorno de escritorio principal.
 
-### Notas v0.0.4 serie "Aries" (Experimental):
+### Notas v0.0.4 (Experimental):
 - Se agrego Chromium como navegador web remplazando a Brave Browser.
 - Nuevas modificaciones para el script de instalación.
 - Se implementaron nombres clave para las versiones de CentrixOS a partir de la v0.0.4 inspirados en los signos zodiacales.

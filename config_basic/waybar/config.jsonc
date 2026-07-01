@@ -10,29 +10,40 @@
     "spacing": 5,
 
     "modules-left": [
-        "hyprland/workspaces"
+        //"hyprland/window"
+	"clock"
     ],
 
     "modules-center": [        
-    	//"hyprland/window"
-    	"clock"
+    	//"clock",
+	"hyprland/workspaces"
     ],
 
     "modules-right": [
+	"tray",
 	"network",
+	"hyprland/language",
         "pulseaudio",
         "battery",
         "battery#bat2",
-        "tray", //Bandeja del sistema (Discord, Steam, etc)
         "custom/power"
     ],
 	
+    "hyprland/language": {
+ 	"format": "{}",
+    	"on-click": "hyprctl switchxkblayout all next",
+		"rewrite": {
+        		"Spanish": "ES",
+        		"English": "US"
+    		}
+    },
+
     "tray": {
         "spacing": 10
     },
 
     "clock": {
-        "format": "{:%A %H:%M}",
+        "format": "{:%A - %d/%m/%Y - %H:%M}",
     },
     
     "battery": {
@@ -66,6 +77,16 @@
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
 	"on-click": "kitty -e nmtui"
-    }
+    },
+
+    "hyprland/workspaces": {
+    	"format": "{id}",
+    	"active-only": false,
+    	"all-outputs": true,
+    	"persistent-workspaces": {"*": [1,2,3,4,5,6,7,8,9,10]},
+    	"on-scroll-up": "hyprctl dispatch workspace e+1",
+    	"on-scroll-down": "hyprctl dispatch workspace e-1",
+    	"disable-scroll": false
+}
 
 }}

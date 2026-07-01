@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-    background-color:#0A0A0A;
+    background-color:#000000;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -43,7 +43,7 @@ button {
 #workspaces button:hover {
     background: transparent;
     box-shadow: none;
-    color: #275A13;
+    color: #C9C9C9;
 }
 
 #workspaces button.active {
@@ -54,35 +54,31 @@ button {
 
 
 #battery{
-	background:transparent;
-    	border-radius: 4px;
-    	margin: 1px;
-    	padding:0px 6px;
-    	color: #ffffff;
+    margin: 4px 4px;
+    padding: 2px 12px;
+    background:#212121;
+    border-radius:30px;
 }
 
 #pulseaudio{
-	background:transparent;
-    	border-radius: 4px;
-    	margin: 1px;
-    	padding:0px 6px;
-    	color: #ffffff;
+    margin: 4px 4px;
+    padding: 2px 12px;
+    background:#212121;
+    border-radius:30px;
 }
 
 #tray{
-	background:transparent;
-    	border-radius: 4px;
-    	margin: 1px;
-    	padding:0px 6px;
-    	color: #ffffff;
+    margin: 4px 4px;
+    padding: 2px 12px;
+    background:#212121;
+    border-radius:30px;
 }
 
 #custom-power{
-	background:transparent;
-    	border-radius: 4px;
-    	margin: 1px;
-    	padding:0px 6px;
-    	color: #E282FF;
+    margin: 4px 16px;
+    padding: 2px 12px;
+    background:#212121;
+    border-radius:30px;
 }
 
 #window{
@@ -94,11 +90,32 @@ button {
 }
 
 #workspaces {
-    	background:transparent;
-    	border-radius: 4px;
-    	margin: 1px;
-    	padding:0px 6px;
-    	color: #ffffff;
+    margin: 4px 16px;
+    padding: 2px 12px;
+    background:#212121;
+    border-radius:30px;
+}
+
+#workspaces button {
+    min-width: 13px;
+    min-height: 18px;
+    padding: 0 4px;
+    margin: 2px;
+    font-size: 13px;
+    border: none;
+    border-radius: 9999px;
+    background: transparent;
+    color: #424242;
+}
+
+#workspaces button.active {
+    background: #B5B5B5;
+    color: #212121;
+}
+
+#workspaces button:hover {
+    background: #242424;
+    color: #FFFFFF;
 }
 
 .modules-left > widget:first-child > #workspaces {
@@ -110,22 +127,26 @@ button {
 }
 
 #clock{
-    	background:transparent;
-    	border-radius:4px;
-    	margin: 1px;
-    	padding:0px 6px;
-    	color: #ffffff;
-	margin-right:3px;
+    margin: 4px 16px;
+    padding: 2px 12px;
+    background:#212121;
+    border-radius:30px;
 }
 
 #network{
-	background:transparent;
-    	border-radius:4px;
-    	margin: 1px;
-    	padding:0px 6px;
-    	color: #ffffff;
-	margin-right:3px;
+    margin: 4px 4px;
+    padding: 2px 12px;
+    background:#212121;
+    border-radius:30px;
 }
+
 #network.disconnected {
     background-color: #f53c3c;
+}
+
+#language {
+    margin: 4px 4px;
+    padding: 2px 12px;
+    background:#212121;
+    border-radius:30px;
 }

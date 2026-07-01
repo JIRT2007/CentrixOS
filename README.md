@@ -1,11 +1,14 @@
 # Bienvenidos a CentrixOS
-Centrix es una capa de personalización creada para sistemas Debian GNU/Linux mediante repositorios oficiales y Debian/Backports.
+Centrix es una capa de personalización creada para sistemas Debian GNU/Linux mediante repositorios oficiales y Debian/Backports. https://jirt2007.github.io/webCENTRIX/
 
 ## Clonado y asignación de permisos
 ```bash
+git config --global user.name "NAME"
+git config --global user.email "user@mail.com"
+
 git clone https://github.com/JIRT2007/centrixOS.git
 
-chmod +x centrixOS/CUSTOMIZATION/install.sh
+chmod +x centrixOS/install.sh
 ./centrixOS/install.sh
 ```
 ### KeyBindings basicos para Hyprland: 

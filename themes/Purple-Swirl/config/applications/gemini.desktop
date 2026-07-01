@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Google Gemini
-Exec=chromium --app=https://gemini.google.com/app
-Terminal=false
-Categories=AI;
