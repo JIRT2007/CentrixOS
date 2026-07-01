@@ -23,10 +23,11 @@ NC='\e[0m'
 
 version() {
 echo -e "
-${RED}CentrixOS v0.0.7 serie "Aries"${NC}
+${RED}CentrixOS v0.0.7 ${NC}
 ----------------------
 ${RED}Developer  :${NC} JIRT2007
 ${RED}Repository :${NC} https://github.com/JIRT2007/centrixOS.git
+${RED}Web Site   :${NC} https://jirt2007.github.io/webCENTRIX/ 
 ${RED}WM         :${NC} Hyprland
 "
 } 

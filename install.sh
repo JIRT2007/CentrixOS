@@ -39,7 +39,6 @@ apply_theme(){
 	kitten @ load-config
 
 	change_wallpaper "$THEME"
-	hyprctl reload
 }
 
 change() {
